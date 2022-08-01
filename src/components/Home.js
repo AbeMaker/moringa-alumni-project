@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import {db} from "../firebase";
-import {Grid,Container,Image} from "semantic-ui-react";
+import {Card,Grid,Container,Image} from "semantic-ui-react";
 import {useNavigate} from "react-router-dom";
 import {collection, onSnapshot} from "firebase/firestore";
+
 
 const Home=()=>{
   const[users, setUsers]=useState([]);
