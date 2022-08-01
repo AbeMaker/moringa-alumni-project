@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import {db} from "../firebase";
-import {Button,Card,Grid,Container,Image, DropdownMenu} from "semantic-ui-react";
+import {Grid,Container,Image} from "semantic-ui-react";
 import {useNavigate} from "react-router-dom";
 import {collection, onSnapshot} from "firebase/firestore";
-import {Dropdown} from 'semantic-ui-react'
 
 const Home=()=>{
   const[users, setUsers]=useState([]);
