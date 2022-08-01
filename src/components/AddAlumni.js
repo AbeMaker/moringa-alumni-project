@@ -5,7 +5,7 @@ import { getDownloadURL, uploadBytesResumable } from 'firebase/storage';
 import { useNavigate } from 'react-router-dom';
 import {ref} from "firebase/storage";
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
-import {async}  from '@firebase/util';
+//import {async}  from '@firebase/util';
 
 
 
@@ -33,7 +33,7 @@ const AddAlumni = () => {
 
     useEffect(()=>{
         const uploadFile=()=>{
-            const name = new Date().getTime() + file.name;
+            //const name = new Date().getTime() + file.name;
             const storageRef = ref(storage, file.name); //was ref and changed to Ref
             const uploadTask = uploadBytesResumable(storageRef,file);
 
